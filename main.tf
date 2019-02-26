@@ -29,7 +29,7 @@ data "aws_ami" "windows_server" {
 
 # Create repository instance
 module "instance_ec2" {
-  source = "github.com/terraform-aws-modules/terraform-aws-ec2-instance"
+  source = "github.com/terraform-aws-modules/terraform-aws-ec2-instance?ref=v1.15.0"
 
   name                        = "${var.instance_name}"
   instance_count              = 1
