@@ -18,6 +18,7 @@ data "aws_security_group" "sgs" {
 # Get Windows server 2016 image id
 data "aws_ami" "windows_server" {
   most_recent = true
+  owners      = ["801119661308"]
 
   filter {
     name   = "name"
